@@ -26,7 +26,7 @@ class FavoritesPage extends StatelessWidget {
             )),
         for (var word in appState.favorites)
           ListTile(
-            leading: const Icon(Icons.favorite),
+            leading: Icon(Icons.favorite, color: theme.colorScheme.onPrimary),
             title: Text(word.toLowerCase(), style: styleH1),
           )
       ],
